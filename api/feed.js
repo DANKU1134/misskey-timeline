@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     try {
         // 環境変数からトークンとユーザーIDを取得
         const MISSKEY_TOKEN = process.env.MISSKEY_TOKEN || '8FsdG90g3CnSBZp5UAoLi6X9VnZ6T1je';
-        const MISSKEY_USERID = process.env.MISSKEY_USERID; // 後で設定
+        const MISSKEY_USERID = process.env.MISSKEY_USERID;
         
         let endpoint = 'https://misskey.io/api/notes/timeline';
         let body = { 
@@ -32,7 +32,6 @@ export default async function handler(req, res) {
         }
         
         console.log('Fetching from:', endpoint);
-        console.log('Request body:', body);
         
         const response = await fetch(endpoint, {
             method: 'POST',
