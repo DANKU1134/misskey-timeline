@@ -1,0 +1,16 @@
+{
+  "name": "misskey-timeline-ebs",
+  "version": "1.0.0",
+  "description": "Misskey Timeline EBS for Twitch Extension",
+  "main": "api/feed.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "keywords": ["misskey", "twitch", "extension", "timeline"],
+  "author": "DANKU",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
